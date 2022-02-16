@@ -27,6 +27,14 @@ class SLL {
   front() {
     return this.head.data;
   }
+  display() {
+    let arr = [];
+    let runner = this.head;
+    while (runner != null) {
+      arr.push(runner.data);
+      runner = runner.next;
+    }
+  }
 }
 let sll = new SLL();
 sll.addFront(1).addFront(2).addFront(3);
